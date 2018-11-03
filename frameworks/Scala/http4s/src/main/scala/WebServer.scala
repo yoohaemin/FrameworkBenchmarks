@@ -1,5 +1,6 @@
 package http4s.techempower.benchmark
 
+/*
 import com.github.plokhotnyuk.jsoniter_scala.core._
 import com.github.plokhotnyuk.jsoniter_scala.macros._
 
@@ -170,3 +171,4 @@ object WebServer extends StreamApp[IO] with Http4sDsl[IO] {
     } yield exitCode
   }
 }
+ */
