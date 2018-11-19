@@ -19,9 +19,13 @@ package object endpoints {
 
 package endpoints {
 
+  import http4s.techempower.benchmark.models.QueryResult
+
   object jsonCodecs {
 
     implicit val messageCodec: JsonValueCodec[Message] = JsonCodecMaker.make(CodecMakerConfig())
+
+    implicit val queryResultCodec: JsonValueCodec[QueryResult] = JsonCodecMaker.make(CodecMakerConfig())
 
   }
 

@@ -21,7 +21,7 @@ class Modules[F[_]: Async: ContextShift: Clock](xs: Transactor[F]) extends Http4
 
   // DB
   private val nondbEndpoints = new NonDBEndpoints[F].routes
-  private val dbEndpoints = new DBEndpoints[F](xs).routes
+  private val dbEndpoints = new DBEndpoints[F](???, ???, ???).routes
 
   private val endpoints = nondbEndpoints <+> dbEndpoints
 
